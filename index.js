@@ -41,8 +41,9 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/', async function (req, res) {
-res.send('Test this works')
+app.get('/', function (req, res) {
+
+  res.render('index')
 });
 
 
